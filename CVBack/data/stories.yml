@@ -1,0 +1,106 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Job Interview Conversation new
+  steps:
+    - intent: my_name
+      entities:
+      - name: "shehan"
+    - action: get_cv_info
+    - intent: mood_great
+    - action: working_arrangement
+    - intent: preferred_working_arrangement
+    - action: device_check
+    - intent: affirm
+    - action: working_experience
+    - intent: inform_current_activity
+    - action: role_due
+    - intent: preferred_role_due
+    - action: available_start_date
+    - intent: start_date
+    - action: get_start_When
+    - intent: affirm
+    - action: utter_goodbye
+
+- story: Job recruiter Conversation
+  steps:
+  - intent: best_candidates
+  - action: give_best_candidates
+  - intent: user_info
+    entities:
+    - name: "shehan"
+  - action: get_selectted_candidate
+  - intent: current_activity
+  - action: give_candidate_current_activity
+  - intent: reason_to_leave
+  - action: give_candidate_reason_to_leave
+  - intent: why_interest_in_position
+  - action: give_candidate_interest_in_position
+  - intent: start_job
+  - action: give_candidate_start_job
+
+
+# - story: Job Interview Conversation
+#   steps:
+#   - intent: my_name
+#     entities:
+#     - name: "shehan"
+#   - action: get_cv_info
+#   - intent: mood_great
+#   - action: utter_age
+#   - intent: my_age
+#     entities:
+#     - age: "21"
+#   - action: get_age
+#   - intent: inform_current_activity
+#   - action: get_current_activity
+#   - intent: reason_leave_current_job
+#   - action: get_reason_leave
+#   - intent: interest_in_position
+#   - action: get_interest_in_position
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_start_When
+#   - intent: start_date
+#   - action: get_start_When
+#   - intent: affirm
+#   - action: utter_goodbye
+
+# - story: Job recruiter Conversation
+#   steps:
+#   - intent: best_candidates
+#   - action: give_best_candidates
+#   - intent: user_info
+#     entities:
+#     - name: "shehan"
+#   - action: get_selectted_candidate
+#   - intent: current_activity
+#   - action: give_candidate_current_activity
+#   - intent: reason_to_leave
+#   - action: give_candidate_reason_to_leave
+#   - intent: why_interest_in_position
+#   - action: give_candidate_interest_in_position
+#   - intent: start_job
+#   - action: give_candidate_start_job

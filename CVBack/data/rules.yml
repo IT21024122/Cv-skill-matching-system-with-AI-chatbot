@@ -1,0 +1,52 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: about candidates 
+  steps:
+  - intent: best_candidates
+  - action: give_best_candidates
+
+- rule: about selectted candidate 
+  steps:
+  - intent: user_info
+    entities:
+    - name: "shehan"
+  - action: get_selectted_candidate
+
+- rule: selectted candidate current activity
+  steps:
+    - intent: current_activity
+    - action: give_candidate_current_activity
+
+- rule: selectted candidate reason to leave
+  steps:
+    - intent: reason_to_leave
+    - action: give_candidate_reason_to_leave
+
+- rule: selectted candidate why interest in position
+  steps:
+    - intent: why_interest_in_position
+    - action: give_candidate_interest_in_position
+
+- rule: selectted candidate start job
+  steps:
+    - intent: start_job
+    - action: give_candidate_start_job
+
+- rule: selet role duration
+  steps:
+    - intent: role_due_check
+    - action: give_reason_role
+
+

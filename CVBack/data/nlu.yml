@@ -1,0 +1,529 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - ok
+    - Sure
+    - sure
+    - lets start
+    - ok lets start
+    - ready
+    - I'm ready
+    - I am ready
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: my_name
+  examples: |
+    - my name is [gayan](name)
+    - my name is [sahan](name)
+    - my name is [shehan](name)
+    - my name is [nuwan](name)
+    - i'm [gayan](name)
+    - [gayan](name)
+    - call me [gayan](name)
+    - i prefer name me [gayan](name)
+    - i prefer [gayan](name)
+    - you can call me [gayan](name)
+    - [gayan](name) is the name
+    - the name is [gayan](name)
+    - you can refer to me as [gayan](name)
+    - i go by the name [gayan](name)
+    - the name i go by is [gayan](name)
+    - [gayan](name) is what you can call me
+    - you may know me as [gayan](name)
+    - people call me [gayan](name)
+    - [gayan](name) is the name i use
+    - refer to me as [gayan](name)
+    - i'm also known as [gayan](name)
+    - my name is [kasun](name)
+    - i'm [kasun](name)
+    - [kasun](name)
+    - call me [kasun](name)
+    - i prefer name me [kasun](name)
+    - i prefer [kasun](name)
+    - you can call me [kasun](name)
+    - [kasun](name) is the name
+    - the name is [kasun](name)
+    - you can refer to me as [kasun](name)
+    - i go by the name [kasun](name)
+    - the name i go by is [kasun](name)
+    - [kasun](name) is what you can call me
+    - you may know me as [kasun](name)
+    - people call me [kasun](name)
+    - [kasun](name) is the name i use
+    - refer to me as [kasun](name)
+    - i'm also known as [kasun](name)
+    - my name is [tharidu](name)
+    - i'm [tharidu](name)
+    - [tharidu](name)
+    - call me [tharidu](name)
+    - i prefer name me [tharidu](name)
+    - i prefer [tharidu](name)
+    - you can call me [tharidu](name)
+    - [tharidu](name) is the name
+    - the name is [tharidu](name)
+    - you can refer to me as [tharidu](name)
+    - i go by the name [tharidu](name)
+    - the name i go by is [tharidu](name)
+    - [tharidu](name) is what you can call me
+    - you may know me as [tharidu](name)
+    - people call me [tharidu](name)
+    - [tharidu](name) is the name i use
+    - refer to me as [tharidu](name)
+    - i'm also known as [tharidu](name)
+    - my name is [amal](name)
+    - i'm [amal](name)
+    - [amal](name)
+    - call me [amal](name)
+    - i prefer name me [amal](name)
+    - i prefer [amal](name)
+    - you can call me [amal](name)
+    - [amal](name) is the name
+    - the name is [amal](name)
+    - you can refer to me as [amal](name)
+    - i go by the name [amal](name)
+    - the name i go by is [amal](name)
+    - [amal](name) is what you can call me
+    - you may know me as [amal](name)
+    - people call me [amal](name)
+    - [amal](name) is the name i use
+    - refer to me as [amal](name)
+    - i'm also known as [amal](name)
+
+- intent: my_age
+  examples: |
+    - i'm [26](age) years old
+    - [26](age) years old
+    - age is [26](age)
+    - [26](age)
+    - i'm [26](age)
+    - i am [26](age) years old
+    - i am [26](age)
+    - [26](age) is my age
+    - my age is [26](age)
+    - i'm [26](age) years of age
+    - i'm [24](age) years young
+    - i am [25](age) years of age
+    - i am [26](age) years young
+    - i'm [21](age) years
+    - [26](age) is how old i am
+    - i am [18](age) years
+    - i am [26](age) years old
+    - i'm [29](age) years old
+    - i'm [26](age) years young
+    - my age is [26](age)
+    - i am [28](age) years old
+    - [26](age) years old is my age
+    - my age is [21](age) years old
+    - [32](age) years young is my age
+    - my age is [38](age) years young
+
+- intent: inform_current_activity
+  examples: |
+    - I am currently employed as a software engineer at XYZ Company, where I develop and maintain web applications.
+    - At the moment, I work as a software engineer at XYZ Company, focusing on the development and upkeep of web applications.
+    - My current role is as a software engineer at XYZ Company, where I am responsible for the development and maintenance of web applications.
+    - Currently, I hold the position of software engineer at XYZ Company, where my primary role involves developing and maintaining web applications.
+    - I am employed as a software engineer at XYZ Company, where my main responsibility is to develop and maintain web applications.
+    - Currently, I'm working at ABC Corp as an Associate Software Engineer for 2 years
+    - Right now, I'm working at XYZ Inc. as a Data Analyst for the past year
+    - I'm currently working as a Sales Executive at PQR Ltd. for 6 months
+    - I'm currently employed at DEF Corp as a Project Manager for 3 years
+    - Currently, I work at LMN Solutions as a Software Developer for the last 4 months
+    - Right now, I'm employed at GHI Technologies as a Business Analyst for the past 2 years
+    - I'm currently a Customer Service Representative at JKL Corporation for 1 year
+    - Currently, I'm a Marketing Executive at MNO Ltd. for the past 6 months
+    - In my current role at XYZ Company, I work as a software engineer, primarily focusing on the development and maintenance of web applications.
+    - At present, I am working as a software engineer at XYZ Company, where my main focus is on developing and maintaining web applications.
+    - I currently work at XYZ Company as a software engineer, specializing in the development and maintenance of web applications.
+    - My current position is as a software engineer at XYZ Company, where I develop and maintain web applications.
+    - Currently, I am employed at XYZ Company as a software engineer, where I am responsible for developing and maintaining web applications.
+    - I am currently working as a software engineer at XYZ Company, where I contribute to the development and maintenance of web applications.
+    - Right now, I am employed at XYZ Company as a software engineer, where I am involved in developing and maintaining web applications.
+    - I currently hold the position of software engineer at XYZ Company, where my primary focus is on developing and maintaining web applications.
+    - At present, my role at XYZ Company involves working as a software engineer, primarily focusing on the development and maintenance of web applications.
+    - Currently, I am working at XYZ Company as a software engineer, where I am responsible for the development and maintenance of web applications.
+    - I am currently employed at XYZ Company as a software engineer, where I am involved in the development and maintenance of web applications.
+    - At the moment, I am working as a software engineer at XYZ Company, where I am responsible for developing and maintaining web applications.
+    - My current employment is as a software engineer at XYZ Company, where I focus on the development and maintenance of web applications.
+    - Currently, I am part of the software engineering team at XYZ Company, where I develop and maintain web applications.
+    - I'm currently working part-time as a Graphic Designer at STU Inc. for 8 months
+    - Right now, I'm a Research Assistant at VWX Labs for the last 3 months
+    - I'm currently on a break and actively seeking employment
+    - Right now, I'm freelancing as a Web Developer
+    - I'm currently pursuing my Master's degree in Computer Science
+    - I'm currently studying for my Bachelor's degree in Business Administration
+    - I'm currently unemployed and looking for job opportunities
+    - Currently, I'm taking some time off to travel and explore new opportunities
+    - Right now, I'm preparing for competitive exams
+    - At the moment,I'm preparing for competitive exams
+    - At the moment,I am employed at XYZ Company as a software engineer
+
+- intent: reason_leave_current_job
+  examples: |
+    - I'm seeking new challenges and opportunities for growth that are not currently available in my current role.
+    - While I've enjoyed my time at XYZ Company, I feel that it's time for me to explore new career opportunities.
+    - I'm looking for a new role that aligns more closely with my long-term career goals and aspirations.
+    - I believe that leaving my current job will allow me to pursue new challenges and opportunities for professional development.
+    - I'm eager to find a role that will allow me to expand my skill set and take on new responsibilities.
+    - I'm interested in exploring new opportunities that will provide me with a fresh perspective and allow me to continue to grow as a professional.
+    - I feel that I have accomplished what I set out to do in my current role and am now ready to take on new challenges.
+    - I'm looking for a new opportunity that will allow me to make a greater impact and contribute more to the success of the team.
+    - I believe that leaving my current job is the next logical step in advancing my career and achieving my professional goals.
+    - I'm excited about the prospect of finding a new role that will challenge me and allow me to continue to learn and grow as a software engineer.
+    - I'm seeking a role where I can utilize my skills and experience to their fullest potential.
+    - I'm looking for a new challenge that will push me out of my comfort zone and help me continue to grow professionally.
+    - I want to work for a company that values innovation and encourages its employees to think outside the box.
+    - I'm looking for a role with more opportunities for collaboration and teamwork than my current position offers.
+    - I want to work for a company that values diversity and inclusion and is committed to creating a positive work environment for all employees.
+    - I'm seeking a role with more opportunities for leadership and mentorship than my current role provides.
+    - I want to work for a company that is more aligned with my personal values and has a positive impact on the world.
+    - I'm looking for a role that will allow me to use my creativity and problem-solving skills to their fullest potential.
+
+- intent: interest_in_position
+  examples: |
+    - This position aligns perfectly with my skills and career goals, offering an ideal opportunity for professional growth and development.
+    - I am excited about this position because it will allow me to further enhance my skills and expertise in software engineering.
+    - The responsibilities and challenges outlined in this position are exactly what I have been looking for in my next career move.
+    - I am drawn to this position because it offers the chance to work with cutting-edge technologies and contribute to innovative projects.
+    - I am impressed by your company's reputation and commitment to excellence, and I am eager to be a part of your team.
+    - This position offers the opportunity for me to take on more responsibility and make a meaningful contribution to the success of the team.
+    - I am excited about the opportunity to work in a collaborative environment where I can learn from and contribute to a talented team of professionals.
+    - The values and culture of your company resonate with me, and I believe that I would be a great fit for your team.
+    - I am interested in this position because it will allow me to apply my skills and experience to make a positive impact and drive results.
+    - This position represents the next logical step in my career, and I am eager to take on new challenges and continue to grow as a software engineer.
+    - I am excited about the opportunity to work with a diverse team and contribute to the success of the company.
+    - This position offers the chance to work on projects that have a real impact and make a difference, which is something that is important to me.
+    - I am impressed by the company's commitment to [specific value or goal], and I am excited about the opportunity to be a part of that.
+    - The innovative approach of your company to [specific aspect of the job] is something that really appeals to me, and I am eager to contribute to that.
+    - I am interested in this position because it offers the opportunity to work in a [specific type of environment or culture] that I thrive in.
+    - This position offers the opportunity to [specific aspect of the job], which is something I have been looking for in my next role.
+    - I am excited about the opportunity to work with a talented team and make a meaningful contribution to the company's success.
+    - I am passionate about [specific aspect of the job], and I am eager to further develop my skills in this area.
+    - This position offers the perfect combination of [specific aspect of the job], which is something I have been looking for in my next role.
+    - I am interested in this position because it would allow me to work for a company that values [specific value or goal], which is something that is important to me.
+    - I am excited about the opportunity to work on [specific aspect of the job], and I believe my background and skills make me a great fit for the role.
+    - I am passionate about [specific aspect of the job], and I am excited about the opportunity to contribute to the success of the team.
+    - I'm excited about this position because it offers an opportunity to work with cutting-edge technology.
+    - I'm interested in this position because it would allow me to further develop my skills and expertise in [specific field].
+    - This position aligns perfectly with my career goals and aspirations.
+    - I'm passionate about [specific field], and this position would allow me to pursue my passion while contributing to the success of the team.
+    - I'm impressed by the company's commitment to [specific value or goal], and I'm excited about the opportunity to be a part of that.
+    - I'm interested in this position because it would allow me to take on new challenges and expand my skill set.
+    - I'm excited about the opportunity to work with a talented team and make a meaningful contribution to the company's success.
+    - This position offers the perfect combination of [specific aspect of the job], which is something I've been looking for in my next role.
+    - I'm interested in this position because it would allow me to [specific goal or achievement].
+    - I'm excited about the opportunity to [specific aspect of the job], and I believe my background and skills make me a great fit for the role.
+    - I'm interested in this position because it would allow me to work on projects that have a real impact and make a difference.
+    - I'm impressed by the company's innovative approach to [specific aspect of the job], and I'm excited about the opportunity to contribute to that.
+    - This position offers the opportunity to [specific aspect of the job], which is something I've been looking for in my next role.
+    - I'm interested in this position because it would allow me to work in a [specific type of environment or culture] that I thrive in.
+    - I'm excited about the opportunity to [specific aspect of the job], and I believe my background and experience make me a strong candidate for the role.
+    - I'm passionate about [specific aspect of the job], and I'm excited about the opportunity to further develop my skills in this area.
+    - I'm interested in this position because it would allow me to work for a company that values [specific value or goal], which is something that is important to me.
+    - I'm excited about the opportunity to work on [specific aspect of the job], and I believe my background and skills make me a great fit for the role.
+    - I'm interested in this position because it would allow me to work with a diverse team and learn from people with different backgrounds and experiences.
+
+- intent: start_date
+  examples: |
+    - I can start immediately.
+    - I'm available to start in two weeks.
+    - My current contract ends in three weeks, so I can start after that.
+    - I need to give my current employer two weeks' notice, so I can start in three weeks.
+    - I'm in the process of wrapping up a project, so I can start in four weeks.
+    - I need to relocate, so I can start once I have settled in, which should be in three weeks.
+    - I have a vacation planned in two weeks, so I can start after I return.
+    - I have some personal commitments to attend to, so I can start in four weeks.
+    - I'm currently freelancing, so I can start as soon as needed.
+    - I need to finish my current semester at university, so I can start in three months.
+    - I'm currently on parental leave, so I can start in three months.
+    - I need to take care of some personal matters, so I can start in two months.
+    - I'm in the process of obtaining a work visa, so I can start once that is finalized, which should be in four weeks.
+    - I need to complete a certification course, so I can start in two months.
+    - I'm wrapping up a project with my current employer, so I can start in six weeks.
+    - I'm currently in discussions with my current employer about transitioning out of my role, so I can start in four weeks.
+    - I need to relocate to the area, so I can start once I have moved, which should be in six weeks.
+    - I'm currently in the final stages of interviews with another company, so I can start in four weeks if I'm not offered that position.
+    - I need to provide one month's notice to my current employer, so I can start in six weeks.
+    - I'm currently in the process of negotiating my start date with my current employer, so I can start in four weeks if I'm not able to extend that.
+    - I can start right away and am excited about the opportunity to begin as soon as possible.
+    - I am available to start immediately and can begin as soon as necessary.
+    - I am ready to start at your earliest convenience.
+    - I am flexible with my start date and can begin whenever is best for the company.
+    - I am prepared to start as soon as the paperwork is finalized.
+    - I am available to start on [specific date], but I am willing to adjust my start date to meet the company's needs.
+    - I can start within [number of weeks] weeks' notice, depending on the requirements of my current position.
+    - I am ready to start upon receiving confirmation from your end.
+    - I am eager to join your team and am available for an immediate start.
+    - I am prepared to start at your earliest convenience and am excited to begin contributing to the team.
+    - Following the receipt of an offer, I would require a two-week notice period to facilitate the transition from my current role.
+    - I can begin two weeks after receiving an offer, allowing for a smooth transition period in my current position.
+    - After accepting an offer, I will need a two-week notice period before I can start in order to wrap up my current responsibilities.
+    - I am available to start two weeks after receiving an offer to provide ample time for transitioning out of my current role.
+    - Upon receiving an offer, I can start in two weeks' time to allow for a smooth handover process in my current position.
+    - I require a two-week notice period after accepting an offer to ensure a seamless transition from my current role.
+    - After accepting an offer, I will need a two-week notice period before I can commence the new role.
+    - I am willing to start two weeks after receiving an offer to accommodate the necessary transition period in my current position.
+    - Upon acceptance of an offer, I will need two weeks to wrap up my current responsibilities before starting the new role.
+    - I am available to start in two weeks' time, following the acceptance of an offer, to allow for a smooth transition from my current role.
+    - I can start immediately after accepting an offer and am excited about the opportunity to join your team.
+    - I am available to start as soon as needed and can begin immediately upon receiving an offer.
+    - I am prepared to start at your earliest convenience and am ready to hit the ground running.
+    - I am ready to start right away and am looking forward to contributing to the team from day one.
+    - I am available to start immediately and am excited about the opportunity to begin working with your company.
+
+- intent: best_candidates
+  examples: |
+    - Can you provide me with information about the best candidates for the position?
+    - I'm interested in learning about the top candidates for the job.
+    - Who are the best candidates you've interviewed for this role?
+    - I want to know more about the most qualified candidates for the position.
+    - Can you tell me about the top contenders for the job?
+    - I'm looking for information about the strongest candidates for the position.
+    - Who are the standout candidates for this role?
+    - Can you provide me with a list of the most promising candidates?
+    - I want to know about the most suitable candidates for the job.
+    - Who are the most qualified candidates you've come across?
+    - Can you tell me about the candidates who best match the job requirements?
+    - I'm interested in learning about the top talents you've identified for this role.
+    - Who are the best fits for the position based on your assessment?
+    - Can you give me more information about the top-performing candidates?
+    - I'm looking for details about the most impressive candidates you've interviewed.
+    - Who are the most suitable candidates you've interviewed so far?
+    - Can you tell me about the candidates with the strongest qualifications?
+    - I want to know more about the candidates who are the best match for the job.
+    - Who are the top candidates in terms of skills and experience?
+    - Can you provide me with a shortlist of the most outstanding candidates?
+    - I want to know best candidates
+
+- intent: user_info
+  examples: |
+    - I want to know about user [shehan](name).
+    - Can you provide me with information about user [shehan](name)?
+    - What can you tell me about [vishawa](name)?
+    - Tell me about [shehan](name).
+    - I'm interested in learning more about [shehan](name).
+    - Can you give me some details about user [didula](name)?
+    - I want to know about the user named [shehan](name).
+    - Give me information about [shehan](name).
+    - Can you provide me with details about the user with the name [shehan](name)?
+    - I'm curious about user [nirosh](name).
+    - What do you know about [perera](name)?
+    - Tell me everything you know about user [shehan](name).
+    - Who is user [shehan](name)?
+    - I'd like to know more about [shehan](name).
+    - Please give me some information about [shehan](name).
+    - Can you tell me about [shehan](name)?
+    - What can you tell me about the user [amal](name)?
+    - Give me an overview of user [shen](name).
+    - I'm curious about user [gamini](name).
+    - What do you know about [shehan](name)?
+    - Tell me everything you know about user [shehan](name).
+    - Who is user [gayan](name)?
+    - I'd like to know more about [nimesh](name).
+    - Please give me some information about [tharidu](name).
+    - Can you tell me about [shehan](name)?
+    - What can you tell me about the user [shehan](name)?
+    - Give me an overview of user [shehan](name).
+
+- intent: current_activity
+  examples: |
+    - What is his current activity?
+    - What is he currently doing?
+    - What is his current job?
+    - What is his current role?
+    - What is he working on right now?
+    - What is his current work status?
+    - Can you tell me what he is currently doing for work?
+    - What is his current employment status?
+    - What is his current job title?
+    - What is his current position?
+    - What is his current role at work?
+    - What is his current professional status?
+    - Can you provide information about his current activity?
+    - What is he currently occupied with?
+    - Can you tell me what he is currently involved in?
+    - What is his current job situation?
+    - What is his current employment situation?
+    - What is he up to these days in terms of work?
+    - What is his current work situation?
+
+- intent: reason_to_leave
+  examples: |
+    - What is the reason for leaving his/her current job?
+    - Why does he/she want to leave his/her current position?
+    - Can you tell me why he/she is looking to leave his/her current role?
+    - What is motivating him/her to leave his/her current job?
+    - What is the reason behind his/her decision to leave his/her current company?
+    - Can you explain why he/she is considering leaving his/her current position?
+    - What factors are influencing his/her decision to leave his/her current job?
+    - Why is he/she interested in leaving his/her current role?
+    - What is prompting him/her to leave his/her current position?
+    - Can you provide some insight into why he/she is leaving his/her current job?
+    - What are the reasons for his/her desire to leave his/her current company?
+    - Why is he/she thinking about leaving his/her current role?
+    - What are the reasons behind his/her decision to leave his/her current job?
+    - Can you give me some background on why he/she is leaving his/her current position?
+    - What is prompting him/her to look for a new job?
+    - Can you explain the reasons for his/her decision to leave his/her current role?
+    - Why is he/she considering leaving his/her current job?
+    - What are the main reasons for wanting to leave his/her current position?
+    - What factors are driving his/her decision to leave his/her current job?
+    - Can you provide some context for why he/she is leaving his/her current role?
+
+
+- intent: why_interest_in_position
+  examples: |
+    - Why is he/she interested in this job position?
+    - What makes him/her interested in this role?
+    - Can you tell me why he/she is interested in this position?
+    - What motivates him/her to apply for this job?
+    - Why does he/she want to work in this role?
+    - What attracts him/her to this job position?
+    - Can you explain his/her interest in this job?
+    - What is his/her reason for being interested in this position?
+    - Why is he/she excited about this job opportunity?
+    - What makes him/her a good fit for this role?
+    - Why does he/she want to join this company?
+    - What aspects of this job position appeal to him/her?
+    - Can you provide more information about why he/she wants this job?
+    - What factors are driving his/her interest in this job position?
+    - Why is he/she enthusiastic about working in this role?
+    - What specific aspects of this job position interest him/her?
+    - Why does he/she feel this job is a good fit for him/her?
+    - Can you explain what makes him/her interested in this role?
+    - What are his/her motivations for applying to this job?
+    - Why does he/she believe he/she is a good candidate for this position?
+
+- intent: start_job
+  examples: |
+    - When can he start the job?
+    - What is his availability to start?
+    - When can he begin working?
+    - When can he start his new position?
+    - What is his start date?
+    - When can he join the company?
+    - What is his earliest start date?
+    - When is he able to start working?
+    - Can he start immediately?
+    - When can he commence employment?
+    - Is he available to start right away?
+    - Can he start the job next week?
+    - When is he able to start his new role?
+    - How soon can he start working?
+    - When can he start if he gets the job?
+    - Is he available to start within two weeks?
+    - When can he begin if offered the job?
+    - Can he start within a month?
+    - What is his notice period?
+    - When can he start once he accepts the offer?
+
+- intent: preferred_working_arrangement
+  examples: |
+    - Remote
+    - Physical
+    - Hybrid
+    - i can work Remote
+    - can work Remote
+    - i can work Physical
+    - can work Physical
+
+- intent: preferred_role_due
+  examples: |
+    - Less than 1 year
+    - 1-2 years
+    - 3-5 years
+    - More than 5 years
+
+- intent: role_due_check
+  examples: |
+    - How long would he ideally like to stay in this role?
+    - How long would he ideally like to stay in this role
+    - stay in this role
+

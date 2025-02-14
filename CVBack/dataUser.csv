@@ -1,0 +1,51 @@
+,ID,Skills,job_vacancies_Job_ID,Job_Title,Skills_text
+0,9,"['networking', 'cisco', 'ccna', 'switching']",4,Network Engineer,networking cisco ccna switching
+1,7,"['data modeling', 'oracle', 'sql', 'database management']",3,Database Administrator,data modeling oracle sql database management
+2,3,"['python', 'r', 'statistics', 'machine learning', 'data analysis']",2,Data Scientist,python r statistics machine learning data analysis
+3,5,"['software development', 'c++', 'algorithms', 'python']",0,Software Engineer,software development c++ algorithms python
+4,7,['python'],0,Software Engineer,python
+5,12,"['python', 'machine learning', 'statistics']",2,Data Scientist,python machine learning statistics
+6,8,"['python', 'statistics', 'data analysis']",2,Data Scientist,python statistics data analysis
+7,10,['java'],0,Software Engineer,java
+8,16,"['css', 'web development', 'html', 'javascript', 'backend', 'frontend']",1,Web Developer,css web development html javascript backend frontend
+9,20,['javascript'],1,Web Developer,javascript
+10,1,"['algorithms', 'python']",0,Software Engineer,algorithms python
+11,18,"['python', 'software development', 'java']",0,Software Engineer,python software development java
+12,10,"['oracle', 'sql', 'database management']",3,Database Administrator,oracle sql database management
+13,18,['java'],0,Software Engineer,java
+14,14,"['css', 'html', 'backend', 'javascript', 'web development', 'frontend']",1,Web Developer,css html backend javascript web development frontend
+15,19,"['frontend', 'html', 'javascript', 'web development']",1,Web Developer,frontend html javascript web development
+16,4,['data modeling'],3,Database Administrator,data modeling
+17,11,['java'],0,Software Engineer,java
+18,8,"['java', 'software development', 'python']",0,Software Engineer,java software development python
+19,5,"['java', 'software development', 'algorithms', 'python', 'c++']",0,Software Engineer,java software development algorithms python c++
+20,6,"['networking', 'routing', 'ccna']",4,Network Engineer,networking routing ccna
+21,11,"['machine learning', 'statistics', 'r']",2,Data Scientist,machine learning statistics r
+22,11,"['css', 'html', 'web development', 'javascript', 'backend', 'frontend']",1,Web Developer,css html web development javascript backend frontend
+23,3,"['python', 'c++', 'software development', 'algorithms']",0,Software Engineer,python c++ software development algorithms
+24,12,"['ccna', 'networking', 'cisco', 'routing']",4,Network Engineer,ccna networking cisco routing
+25,18,"['ccna', 'cisco', 'networking', 'switching']",4,Network Engineer,ccna cisco networking switching
+26,17,"['data modeling', 'sql']",3,Database Administrator,data modeling sql
+27,16,['database management'],3,Database Administrator,database management
+28,8,"['sql', 'database management']",3,Database Administrator,sql database management
+29,19,"['ccna', 'networking', 'switching', 'routing', 'cisco']",4,Network Engineer,ccna networking switching routing cisco
+30,20,"['database management', 'mysql', 'sql', 'data modeling', 'oracle']",3,Database Administrator,database management mysql sql data modeling oracle
+31,10,['data modeling'],3,Database Administrator,data modeling
+32,4,"['algorithms', 'software development', 'c++', 'python', 'java']",0,Software Engineer,algorithms software development c++ python java
+33,9,"['javascript', 'html', 'css', 'backend', 'web development']",1,Web Developer,javascript html css backend web development
+34,5,"['algorithms', 'software development', 'c++']",0,Software Engineer,algorithms software development c++
+35,13,['python'],2,Data Scientist,python
+36,4,"['java', 'software development']",0,Software Engineer,java software development
+37,11,['ccna'],4,Network Engineer,ccna
+38,12,"['ccna', 'switching', 'cisco', 'networking', 'routing']",4,Network Engineer,ccna switching cisco networking routing
+39,15,"['cisco', 'routing', 'ccna']",4,Network Engineer,cisco routing ccna
+40,16,"['software development', 'python', 'algorithms', 'c++']",0,Software Engineer,software development python algorithms c++
+41,15,['switching'],4,Network Engineer,switching
+42,8,"['networking', 'routing']",4,Network Engineer,networking routing
+43,4,"['database management', 'sql', 'data modeling', 'oracle']",3,Database Administrator,database management sql data modeling oracle
+44,15,['oracle'],3,Database Administrator,oracle
+45,13,"['web development', 'backend', 'javascript', 'css', 'frontend', 'html']",1,Web Developer,web development backend javascript css frontend html
+46,17,"['database management', 'sql', 'data modeling', 'mysql', 'oracle']",3,Database Administrator,database management sql data modeling mysql oracle
+47,11,['c++'],0,Software Engineer,c++
+48,9,['python'],2,Data Scientist,python
+49,12,"['switching', 'cisco', 'networking']",4,Network Engineer,switching cisco networking

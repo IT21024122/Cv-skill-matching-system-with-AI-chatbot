@@ -1,0 +1,133 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - my_name
+  - my_age
+  - inform_current_activity
+  - reason_leave_current_job
+  - interest_in_position
+  - start_date
+  - best_candidates
+  - user_info
+  - current_activity
+  - reason_to_leave
+  - why_interest_in_position
+  - start_job
+  - preferred_working_arrangement
+  - preferred_role_due
+
+entities:
+  - name
+  - age
+
+slots:
+  callname:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+  # name:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+  # age:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+  # current_activity:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+  # reason_leave:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+  # interest_in_position:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+  # start_when:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: name
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_good_name:
+    - text: "What’s your good name ?"
+
+  utter_age:
+    - text: "How old are you?"
+
+  utter_Currenty:
+    - text: "What do you do Currenty?"
+
+  utter_leave_job:
+    - text: "Why do you want to leave your current job?"
+
+  utter_interested_in_position:
+    - text: "Why are you interested in this position?"
+
+  utter_about_job:
+    - text: "This can involve writing code, testing, debugging"
+
+  utter_start_When:
+    - text: "When can you start?"
+
+  utter_Thank_consider:
+    - text: "Thank you for your time. We will consider you, along with the other applicants, and let you know if we will be proceeding.Have a great day!"
+
+actions:
+  - get_cv_info
+  - get_age
+  - get_current_activity
+  - get_reason_leave
+  - get_interest_in_position
+  - get_start_When
+  - give_best_candidates
+  - get_selectted_candidate
+  - give_candidate_current_activity
+  - give_candidate_reason_to_leave
+  - give_candidate_interest_in_position
+  - give_candidate_start_job
+  - give_reason_role
+  - available_start_date
+  - role_due
+  - working_experience
+  - device_check
+  - working_arrangement
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false

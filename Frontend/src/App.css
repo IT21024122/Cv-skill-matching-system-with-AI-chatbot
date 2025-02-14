@@ -1,0 +1,33 @@
+.staircase {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 80px; /* Space for image */
+}
+
+.step-image {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.step-content {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+}
+
+.step:nth-child(odd) .step-content {
+  background: #e3f2fd;
+}
