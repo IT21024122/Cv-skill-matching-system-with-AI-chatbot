@@ -1,0 +1,19 @@
+
+
+
+																				AIchatbot envirment activate
+->   anaconda prompt    ->    cd C:\Users\ACER\Documents\chatbot       ->      conda activate AIchatbot
+
+		for run python
+->   rasa run actions
+
+
+
+2)conda activate AIchatbot             rasa run
+
+
+mainbackend  -->  conda activate AIchatbot -->   python main.py
+
+
+
+
